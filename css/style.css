@@ -141,10 +141,6 @@ img {
 }
 .header-contacts-mail:hover,
 .header-contacts-mail:focus {
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
   color: var(--accent-color);
 }
 .header-contacts-mail,
@@ -168,10 +164,6 @@ img {
 }
 .header-contacts-tell:hover,
 .header-contacts-tell:focus {
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
   color: var(--accent-color);
 }
 /* --------------------------------------------Hero-------------------- */
@@ -328,16 +320,32 @@ img {
 .team-social-networks {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 32px;
   padding-right: 32px;
-  margin-top: 10px;
+  margin-top: 16px;
+}
+.social-networks {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
   color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-networks-size {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
+
 .social-networks:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.social-networks:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
@@ -361,6 +369,30 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+/* --------------------------------------------Clients-------------------- */
+.clients-list {
+  display: flex;
+}
+.clients-list {
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-icon {
+  width: 106px;
+  height: 60px;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 /* --------------------------------------------Footer-------------------- */
 .footer {
