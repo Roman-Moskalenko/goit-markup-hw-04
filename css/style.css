@@ -83,6 +83,7 @@ img {
   padding-bottom: 24px;
   border-bottom: 1px solid;
 }
+
 .header-link-logo {
   font-family: Raleway;
   font-style: normal;
@@ -130,6 +131,12 @@ img {
 .header-contacts-connect:not(:last-child) {
   margin-right: 50px;
 }
+.header-contacts-mail-logo {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
 .header-contacts-mail:hover,
 .header-contacts-mail:focus {
   width: 135px;
@@ -145,7 +152,12 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-
+.header-contacts-tell-logo {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
 .header-contacts-tell:hover,
 .header-contacts-tell:focus {
   width: 135px;
@@ -156,11 +168,21 @@ img {
 }
 /* --------------------------------------------Hero-------------------- */
 .hero {
-  background: #2f303a;
+  background-color: #c4c4c4;
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+}
+.hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-img.jpg");
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-title {
   width: 695px;
@@ -205,6 +227,25 @@ img {
 .assets-head {
   margin-bottom: 10px;
 }
+.assets-logo-conteiner {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.assets-logo {
+  display: flex;
+}
+.assets-logo-conteiner:not(:last-child) {
+  margin-right: 30px;
+}
+.assets-logo-size {
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+
 .assets-head {
   font-weight: 700;
   font-size: 14px;
