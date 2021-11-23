@@ -242,9 +242,7 @@ img {
 .assets-logo {
   display: flex;
 }
-.assets-logo-conteiner:not(:last-child) {
-  margin-right: 30px;
-}
+
 .assets-logo-size {
   width: 70px;
   height: 70px;
@@ -319,10 +317,8 @@ img {
 }
 .team-social-networks {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
   margin-top: 16px;
 }
 .social-networks {
@@ -349,6 +345,9 @@ img {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+.social-networks-items:not(:last-child) {
+  margin-right: 10px;
+}
 
 .team-main-head {
   font-weight: 700;
@@ -371,10 +370,6 @@ img {
   color: var(--title-text-color);
 }
 /* --------------------------------------------Clients-------------------- */
-.clients-list {
-  margin-top: 50px;
-  margin-bottom: 94px;
-}
 .clients-list {
   display: flex;
 }
@@ -405,10 +400,7 @@ img {
   height: 60px;
   fill: currentColor;
 }
-.footer-container {
-  display: flex;
-  justify-content: baseline;
-}
+
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -416,11 +408,15 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 /* --------------------------------------------Footer-------------------- */
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 .footer-join {
   margin-left: 70px;
-  margin-bottom: 100px;
 }
 .fotter-join-title {
   font-weight: 700;
@@ -429,7 +425,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
 }
 .footer-join-list {
   display: flex;
